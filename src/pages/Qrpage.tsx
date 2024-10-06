@@ -13,7 +13,6 @@ export default function Qrpage() {
           objectFit: "cover",
           top: "10%",
         },
-        finderBorder: 10,
       }}
     />
   );
