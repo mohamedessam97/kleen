@@ -1,11 +1,9 @@
-import Header from "../components/Header";
 import Joinus from "../components/Joinus";
 
 export default function ChooseService() {
   return (
     <>
-      <Header />
-      <div className="my-20">
+      <div className="my-32">
         <h3 className="text-[#292929] text-[20px] font-semibold">
           Choose your service
         </h3>

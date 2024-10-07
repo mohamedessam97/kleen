@@ -1,13 +1,20 @@
 import { Scanner } from "@yudiel/react-qr-scanner";
+import { useNavigate } from "react-router-dom";
 
 export default function Qrpage() {
+  const navigate = useNavigate();
+  const handleScan = (result?: unknown) => {
+    if (result) {
+      navigate("/dropoff");
+    }
+  };
+
   return (
     <Scanner
-      onScan={(result) => console.log(result)}
+      onScan={handleScan}
       styles={{
         container: {
-          height: "100vh",
-          top: "10%",
+          margin: "43% 0",
         },
         video: {
           objectFit: "cover",
