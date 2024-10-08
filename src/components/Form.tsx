@@ -42,7 +42,11 @@ export default function Form() {
         required
         invalid={error.phone}
         value={form.phone}
-        onChange={(e) => setForm({ ...form, phone: e })}
+        onChange={(e) => {
+          //number of special characters
+          const number = e.replace(/[^\d]/g, "");
+          setForm({ ...form, phone: number });
+        }}
       />
       <InputField
         label={t("Car plate number")}
