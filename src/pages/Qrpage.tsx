@@ -5,7 +5,7 @@ export default function Qrpage() {
   const navigate = useNavigate();
   const handleScan = (result?: unknown) => {
     if (result) {
-      navigate("/dropoff");
+      navigate("/choose-service");
     }
   };
 
