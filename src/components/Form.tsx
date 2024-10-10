@@ -22,11 +22,21 @@ export default function Form() {
     carColor: false,
   });
 
+  const [errorStatus, setErrorStatus] = useState("");
   const handleSubmit = () => {
+    const regex = /^(?:(?:\+|00)966|0)?5[0-9]{8}$/;
     if (!form.phone) {
       setError({ ...error, phone: true });
+      setErrorStatus(t("Required"));
       return;
     }
+
+    if (!regex.test(form.phone)) {
+      setError({ ...error, phone: true });
+      setErrorStatus(t("Invalid phone number"));
+      return;
+    }
+
     navigate("/confirmation");
   };
   return (
@@ -41,9 +51,9 @@ export default function Form() {
         label={t("Phone Number")}
         required
         invalid={error.phone}
+        error={errorStatus}
         value={form.phone}
         onChange={(e) => {
-          //number of special characters
           const number = e.replace(/[^\d]/g, "");
           setForm({ ...form, phone: number });
         }}

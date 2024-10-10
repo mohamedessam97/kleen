@@ -11,7 +11,7 @@ export default function Offers() {
     <div className="my-10">
       <img src={img} className="w-full" alt="" />
       <div className="flex gap-3 mt-5">
-        <div className="bg-[#0097CE] text-white p-4 rounded-[6px] flex flex-col items-end relative">
+        <div className="bg-[#0097CE] text-white p-4 rounded-[6px] flex flex-col items-end relative w-full">
           <span className="text-[30px] font-bold">30% {t("Off")}</span>
           <span className="text-end">
             {t("On your first order through the app!")}

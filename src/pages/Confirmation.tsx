@@ -8,7 +8,11 @@ export default function Confirmation() {
   return (
     <>
       <div className="my-32">
-        <img src={i18n.language === "en" ? Img : Img2} alt="" />
+        <img
+          src={i18n.language === "en" ? Img : Img2}
+          alt=""
+          className="w-full mb-2"
+        />
         <p className="text-[#464646] text-[24px] font-semibold">
           {t("we are on the way to you")}
         </p>

@@ -29,6 +29,11 @@ i18n
           Off: "Off",
           "Join us": "Join us",
           "stay up to date to your order": "stay up to date to your order",
+          "Invalid phone number": "Invalid phone number",
+          Required: "Required",
+          "We Apologize": "We Apologize",
+          "something went wrong on our side":
+            "something went wrong on our side",
         },
       },
       ar: {
@@ -53,6 +58,10 @@ i18n
           Off: "خصم",
           "Join us": "انضم الينا",
           "stay up to date to your order": "المتابعة للطلب الخاص بك",
+          "Invalid phone number": "رقم الجوال غير صالح",
+          Required: "مطلوب",
+          "We Apologize": "عذرنا",
+          "something went wrong on our side": "هناك خطأ معنا",
         },
       },
     },

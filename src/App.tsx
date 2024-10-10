@@ -8,6 +8,7 @@ import Pickup from "./pages/Pickup";
 import { I18nextProvider } from "react-i18next";
 import i18n from "./i18n";
 import Offers from "./pages/Offers";
+import NotFound from "./pages/NotFound";
 
 function App() {
   // const { i18n } = useTranslation();
@@ -15,7 +16,7 @@ function App() {
   return (
     <I18nextProvider i18n={i18n}>
       <Router>
-        <div>
+        <div className="max-w-[440px] mx-auto">
           <Routes>
             {/* Define Routes */}
             <Route element={<Layout />}>
@@ -25,6 +26,7 @@ function App() {
               <Route path="/pickup" element={<Pickup />} />
               <Route path="/confirmation" element={<Confirmation />} />
               <Route path="/offers" element={<Offers />} />
+              <Route path="/not-found" element={<NotFound />} />
             </Route>
           </Routes>
         </div>

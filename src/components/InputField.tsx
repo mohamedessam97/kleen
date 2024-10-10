@@ -4,11 +4,13 @@ export default function InputField({
   required,
   invalid,
   onChange,
+  error,
 }: {
   label: string;
   required?: boolean;
   invalid?: boolean;
   value?: string;
+  error?: string;
   onChange?: (value: string) => void;
 }) {
   return (
@@ -28,6 +30,7 @@ export default function InputField({
           invalid && "border-red-500"
         }`}
       />
+      {error && <p className="text-red-500">{error}</p>}
     </div>
   );
 }
