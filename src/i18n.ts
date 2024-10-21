@@ -10,8 +10,8 @@ i18n
       en: {
         translation: {
           "Choose your service": "Choose your service",
-          "Pick up": "Pick up",
-          "Drop off": "Drop off",
+          "Pick up": "Pick up ready clothes",
+          "Drop off": "Drop off clothes to the laundry",
           "we are on the way to you": "we are on the way to you",
           Name: "Name",
           "Phone Number": "Phone Number",
@@ -39,8 +39,8 @@ i18n
       ar: {
         translation: {
           "Choose your service": "اختر خدمتك",
-          "Pick up": "استلام الطلب",
-          "Drop off": "تسليم الطلب",
+          "Pick up": "استلام الملابس الجاهزة",
+          "Drop off": "تسليم الملابس للمغسلة",
           "we are on the way to you": "احد موظفينا في الطريق اليك",
           Name: "الاسم",
           "Phone Number": "رقم الجوال",
